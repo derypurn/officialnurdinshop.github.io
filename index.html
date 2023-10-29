@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NurdinShop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="menu-icon" href="javascript:void(0);" onclick="toggleMenu()"
+        >&#9776;</a
+      >
+      <a href="login.html">Account</a>
+      <a href="#">Keranjang</a>
+      <a href="#" onclick="logout()">Log Out</a>
+      <div class="logo"><img src="NURDINSHOP.png" /></div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        var x = document.getElementsByClassName("navbar")[0];
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+
+      function logout() {
+        alert("Yakin anda ingin logout??");
+      }
+    </script>
+
+    <div class="wrapper">
+      <div class="slides">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+        <span id="slide-4"></span>
+        <span id="slide-5"></span>
+        <div class="images">
+          <img src="WELLCOME.png" />
+          <img src="pulsa.png" />
+          <img src="paketdata.png" />
+          <img src="listrik.png" />
+          <img src="games.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <a href="#slide-1">1</a>
+      <a href="#slide-2">2</a>
+      <a href="#slide-3">3</a>
+      <a href="#slide-4">4</a>
+      <a href="#slide-5">5</a>
+    </div>
+
+    <section>
+      <h1>Pilihan Menu</h1>
+      <table align="center" cellpadding="10">
+        <tr class="logo2">
+          <td id="1">
+            <a href="pulsa.html">
+              <img src="pulsalogo.png" width="90px" height="90px" /></a
+            ><br />PULSA
+          </td>
+          <td id="2">
+            <a href="paketdata.html"
+              ><img src="paketdatalogo.png" width="90px" height="90px" /></a
+            ><br />PAKET DATA
+          </td>
+          <td id="3">
+            <a href="listrik.html"
+              ><img src="listriklogo.png" width="90px" height="90px" /></a
+            ><br />LISTRIK
+          </td>
+          <td id="4">
+            <a href="games.html"
+              ><img src="gameslogo.png" width="90px" height="90px" /></a
+            ><br />GAME
+          </td>
+        </tr>
+      </table>
+      <br /><br />
+      <hr />
+      <br /><br />
+      <h1>Pilihan Promo</h1>
+
+      <table align="center" cellpadding="10">
+        <tr class="logo2">
+          <td id="1">
+            <a href="#">
+              <img src="diskon1.png" width="90px" height="90px"
+            /></a>
+          </td>
+          <td id="2">
+            <a href="#"><img src="diskon2.png" width="90px" height="90px" /></a>
+          </td>
+          <td id="3">
+            <a href="#"><img src="diskon3.png" width="90px" height="90px" /></a>
+          </td>
+          <td id="4">
+            <a href="#"><img src="diskon4.png" width="90px" height="90px" /></a>
+          </td>
+        </tr>
+      </table>
+    </section>
+  </body>
+  <footer>
+    <div class="medsos">
+      <h2>Media Social Account</h2>
+      <a href="https://www.instagram.com/derypurn_/" target="_blank"
+        >Instagram |</a
+      ><a href="https://web.facebook.com/dery.purnama.942" target="_blank">
+        Facebook |</a
+      >
+      <a
+        href="https://l.instagram.com/?u=https%3A%2F%2Ftwitter.com%2FPoern_D%3Ft%3DSiRNiw-gPtKewmuml8Iz1g%26s%3D09&e=AT2YClF3n54k1NlJDB5GpMtHYVYxeUfe3dZR7FtaN36WPpmc7pwj51DixlZpIQN-4d7bhZtvbLWnEVCdIlogV4d4QdxXz-l6V70Nmqut8f9-k00hxIINUDwZTdo"
+        target="_blank"
+        >Twitter |
+      </a>
+      <a
+        href="https://l.instagram.com/?u=https%3A%2F%2Fwww.threads.net%2F%40derypurn_&e=AT0OomB9l2RP-s7q-GAPO4emRmG6QJGGTlsm5nHA1IW1EcMPERpwdFxDqsFfCyP8MDZ6qxpX8cSVl6YzWGWuCdD1wbmW2DR6lOruKAs"
+        target="_blank"
+        >Threads</a
+      >
+
+      <h2>Email & Pengaduan</h2>
+      <a href="mailto:derypurnama070906@gmail.com"
+        >derypurnama070906@gmail.com</a
+      >
+
+      <h2>Alamat Kantor</h2>
+      <a href="https://maps.app.goo.gl/vc7fPmv2d88C92aU8"
+        >Jln.Pasanggrahan, Blok Sukamaju, Desa Pasanggrahan,Kec. Maja</a
+      >
+    </div>
+    <br /><br /><br /><br /><br />
+    <p>Copyright ©NurdinShop | 2023</p>
+  </footer>
+</html>

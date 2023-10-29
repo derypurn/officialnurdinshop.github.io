@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NurdinShop</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #66a5ad;
+      }
+
+      .navbar {
+        background-color: #07575b;
+        overflow: hidden;
+      }
+
+      .navbar a {
+        /* float: left; */
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin-top: 8px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+        border-radius: 10px;
+      }
+
+      .navbar .logo {
+        width: auto;
+        height: 60px;
+        display: flex;
+        float: right;
+        margin-right: 40px;
+      }
+
+      .navbar a.icon {
+        float: right;
+        display: block;
+        color: blue;
+      }
+
+      .navigation a {
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        background-color: #dedede;
+        font-size: 0px;
+        border-radius: 50%;
+        transition: 0, 5s;
+      }
+
+      .navigation a:hover {
+        background-color: #666;
+      }
+
+      .navigation {
+        position: absolute;
+        margin-right: auto;
+        margin-left: auto;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        margin-top: -50px;
+      }
+
+      section {
+        padding: 20px;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0 0 5px rgba(234, 223, 4, 0.1);
+        border-radius: 5px;
+      }
+
+      .logo2 img {
+        display: inline-block;
+        transition: 1s;
+        border-radius: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo2 td {
+        flex-wrap: wrap;
+      }
+      .logo2 td :hover {
+        background-color: #666;
+      }
+
+      .back {
+        height: 50px;
+        width: 50px;
+        float: left;
+        display: flex;
+      }
+
+      footer {
+        text-align: center;
+        color: white;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+
+      @media screen and (max-width: 480px) {
+        .navbar .logo {
+          width: auto;
+          height: 35px;
+          display: flex;
+          float: right;
+          margin-right: 40px;
+          margin-top: 7px;
+        }
+
+        .navbar a {
+          /* float: left; */
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 10px 13px;
+          text-decoration: none;
+          margin-top: 8px;
+          font-size: small;
+        }
+        .logo2 img {
+          height: 50px;
+          width: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="menu-icon" href="javascript:void(0);" onclick="toggleMenu()"
+        >&#9776;</a
+      >
+      <a href="login.html">Account</a>
+      <a href="#">Keranjang</a>
+      <div class="logo"><img src="NURDINSHOP.png" /></div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        var x = document.getElementsByClassName("navbar")[0];
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+        function logout() {
+          alert("Yakin anda ingin logout??");
+        }
+      }
+    </script>
+
+    <section>
+      <div class="back">
+        <a href="index.html"
+          ><img src="back.png" height="30px" width="30px"
+        /></a>
+      </div>
+      <h1><b>Pilihan Games</b></h1>
+      <table align="center" cellpadding="10">
+        <tr class="logo2">
+          <td id="1">
+            <a href="ff.html">
+              <img src="ff.png" width="90px" height="90px" /></a
+            ><br />FREE FIRE
+          </td>
+          <td id="2">
+            <a href="ml.html"><img src="ml.png" width="90px" height="90px" /></a
+            ><br />MOBILE LEGENDS
+          </td>
+          <td id="3">
+            <a href="domino.html"
+              ><img src="domino.png" width="90px" height="90px" /></a
+            ><br />DOMINO
+          </td>
+          <td id="4">
+            <a href="pubg.html"
+              ><img src="pubg-10222.png" width="90px" height="90px" /></a
+            ><br />PUBG MOBILE
+          </td>
+        </tr>
+      </table>
+    </section>
+    <footer>
+      <p>Copyright ©NurdinShop | 2023</p>
+    </footer>
+  </body>
+</html>

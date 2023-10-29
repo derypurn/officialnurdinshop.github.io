@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger Menu</title>
+
+    <style>
+      /* Reset beberapa gaya bawaan browser */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Gaya umum untuk body dan font */
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      /* Gaya menu hamburger */
+      #menu-toggle {
+        display: none;
+      }
+
+      #menu-icon {
+        font-size: 30px;
+        cursor: pointer;
+      }
+
+      #menu {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        transition: left 0.3s;
+      }
+
+      #menu ul {
+        list-style: none;
+        padding: 20px;
+      }
+
+      #menu ul li {
+        margin-bottom: 20px;
+      }
+
+      #menu ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        display: block;
+        transition: color 0.3s;
+      }
+
+      #menu-toggle:checked + #menu {
+        left: 0;
+      }
+
+      #menu-toggle:checked + #menu + #menu-icon {
+        position: fixed;
+        left: 250px;
+      }
+
+      #menu ul li a:hover {
+        color: #ff7f50;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" id="menu-icon">&#9776;</label>
+    <nav id="menu">
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Tentang Kami</a></li>
+        <li><a href="#">Layanan</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        background-color: #07575b;
+        overflow: hidden;
+      }
+
+      .navbar a {
+        /* float: left; */
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin-top: 8px;
+      }
+
+      .navbar .logo {
+        width: auto;
+        height: 60px;
+        display: flex;
+        float: right;
+        margin-right: 40px;
+      }
+
+      .navbar a.icon {
+        float: right;
+        display: block;
+        color: blue;
+      }
+
+      .back {
+        height: 30px;
+        width: 30px;
+        float: left;
+        display: flex;
+      }
+
+      .back img {
+        display: flex;
+        margin-top: -10px;
+        margin-left: -10px;
+      }
+
+      .logo {
+        width: auto;
+        height: 60px;
+        display: flex;
+        margin-right: 40px;
+      }
+
+      .metode-pembayaran h4 {
+        display: flex;
+        margin-left: 10px;
+      }
+      .metode-pembayaran select {
+        display: flex;
+        float: right;
+        margin-right: 20px;
+        margin-top: -40px;
+        /* -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none; */
+        border: none;
+        outline: none;
+        box-shadow: none;
+        height: 20px;
+        width: 25vh;
+        font-family: "Times New Roman", Times, serif;
+        text-align: right;
+      }
+      /* select:hover {
+        background-color: #66a5ad;
+        width: 150px;
+        height: 30px;
+        border-radius: 5px;
+        color: #ddd;
+      } */
+
+      .search {
+        align-items: center;
+        background: #fff;
+        border: 2px solid black;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5em 0;
+        padding: 0.5em 0.5em 0.5em 1em;
+        transition: all 0.5s;
+        width: 250px;
+        height: 15px;
+        font-size: 15px;
+        margin-left: 10px;
+      }
+
+      .search input::placeholder {
+        background-color: none;
+      }
+      .search input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: transparent;
+        border: 0;
+        color: inherit;
+        font: inherit;
+        outline: 0;
+        color: rgb(114, 114, 1414);
+      }
+
+      .search input {
+        flex: 1;
+      }
+
+      .promo {
+        background-color: #fff;
+        box-shadow: black;
+        /* border: 1px solid black; */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        width: 30%;
+        height: 50px;
+        margin-left: 10px;
+        top: 10px;
+      }
+
+      .promo select {
+        margin-left: 75%;
+        border: none;
+        outline: none;
+        display: flex;
+        font-family: "Times New Roman", Times, serif;
+        margin-top: -24px;
+      }
+      .promo h4 {
+        display: flex;
+        margin-left: 10px;
+      }
+
+      button {
+        height: 30px;
+        width: 500px;
+        border-radius: 10px;
+        border: none;
+        margin-top: 10%;
+        margin-left: 35%;
+        background-color: #25cc1c;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      button:hover {
+        background-color: goldenrod;
+        transition: 0.5s;
+      }
+
+      @media screen and (max-width: 480px) {
+        .navbar .logo {
+          width: auto;
+          height: 40px;
+          display: flex;
+          float: right;
+          margin-right: 40px;
+          margin-top: 5px;
+        }
+
+        .logo {
+          width: auto;
+          height: 40px;
+          display: flex;
+          margin-right: 40px;
+          margin-top: 5px;
+        }
+
+        h3 {
+          font-size: small;
+        }
+
+        h1 {
+          font-size: large;
+        }
+
+        h4 {
+          font-size: medium;
+        }
+
+        .promo {
+          width: 380px;
+        }
+
+        .promo select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+        }
+
+        button {
+          height: 30px;
+          width: 250px;
+          margin-left: 22%;
+          margin-top: 40%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="back">
+        <a href="paketdata.html"
+          ><img src="back.png" height="30px" width="30px"
+        /></a>
+      </div>
+      <a href="login.html">Checkout</a>
+    </div>
+
+    <div class="logo">
+      <img src="NURDINSHOP.png" />
+      <h3>OFFICIAL</h3>
+    </div>
+    <hr />
+    <h1 style="text-align: center">Konfirmasi Transasksi Anda</h1>
+
+    <div class="search">
+      <form action="https://www.google.com/search" method="GET">
+        <input
+          type="text"
+          name="q"
+          placeholder="Masukan Ulang Nomor Anda"
+          required
+        />
+      </form>
+    </div>
+    <hr />
+
+    <div class="metode-pembayaran">
+      <h4>Metode Pembayaran</h4>
+      <select name="format" id="format">
+        <option selected disabled>Pilih Metode Pembayaran</option>
+        <option value="GO PAY"><img src="gopay.png" />GO PAY</option>
+        <option value="DANA">DANA</option>
+        <option value="OVO">OVO</option>
+        <option value="BANK BRI">BANK BRI</option>
+        <option value="BANK BCA">BANK BCA</option>
+        <option value="alfa">ALFAMART</option>
+        <option value="INDOMART">INDOMART</option>
+        <option value="GERAI">GERAI TERDEKAT</option>
+      </select>
+      <hr />
+    </div>
+
+    <div class="promo">
+      <div class="item-promo">
+        <h4>Potongan Harga atau Diskon</h4>
+        <select name="format" id="format">
+          <option selected disabled>Pilih Voucher</option>
+          <option value="2%">DISKON 2%</option>
+          <option value="5%">DISKON 5%</option>
+          <option value="6%">DISKON 6%</option>
+          <option value="8%">DISKON 8%</option>
+          <option value="10%">DISKON 10%</option>
+          <option value="C2%">CASHBACK 2%</option>
+          <option value="C5%">CASHBACK 5%</option>
+          <option value="C8%">CASHBACK 8%</option>
+          <option value="C10%">CASHBACK 10%</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="btn">
+      <a href="infosuccess.html"><button>Konfirmasi</button></a>
+    </div>
+  </body>
+</html>
